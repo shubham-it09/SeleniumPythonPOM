@@ -19,6 +19,7 @@ class TestCarwale(BaseTest):
         log.logger.info("********inside new car test**************")
         home= HomePage(self.driver)
         home.gotoNewCars()
+        print("testing for CICD")
         time.sleep(5)
 
     @pytest.mark.parametrize("carBrand,carTitle",dataProvider.get_data("NewCarTest"))
